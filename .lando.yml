@@ -2,3 +2,7 @@ name: php-crud
 recipe: lamp
 config:
   webroot: .
+services:
+  appserver:
+    config:
+      php: php.ini

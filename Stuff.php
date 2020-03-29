@@ -3,26 +3,8 @@
 /**
  * Class Stuff
  */
-class Stuff
+class Stuff extends Entity
 {
-    /** @var mysqli */
-    protected $database;
-
-    /** @var array */
-    protected $request;
-
-    /**
-     * Stuff constructor.
-     * @param $request
-     * @throws Exception
-     */
-    public function __construct($request = [])
-    {
-        $this->database = new mysqli('database', 'lamp', 'lamp', 'lamp');
-        $this->init();
-        $this->request = $request;
-    }
-
     /**
      * @throws Exception
      */
