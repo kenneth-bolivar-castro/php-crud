@@ -13,6 +13,7 @@ if($user->isAnonymous()) {
 <html>
 <head>
     <title>PHP - MySQL CRUD</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
     <h1>Welcome <?php echo $user->getUsername(); ?>!</h1>
@@ -24,5 +25,12 @@ if($user->isAnonymous()) {
         <?php endforeach; ?>
     </ul>
     <h3><a href="logout.php" style="color: red">Logout</a></h3>
+    <hr/>
+    <label for="comments">COMMENT HERE:</label>
+    <div id="comments" contenteditable="true" style="border: 2px solid blue;"></div>
+    <button>Send</button>
+    <div id="messages" style="background-color: purple"></div>
+    <a href="#" id="hide-messages">Message toggle</a>
+    <script src="script.js"></script>
 </body>
 </html>
